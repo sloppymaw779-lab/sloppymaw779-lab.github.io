@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sloppymaw779-lab.github.io/sitemap.xml
