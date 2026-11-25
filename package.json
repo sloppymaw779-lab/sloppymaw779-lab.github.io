@@ -1,0 +1,8 @@
+{
+  "name": "salem-agency-claude-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SALEM AGENCY website with a secure Claude-powered AI assistant",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=20.0.0" }
+}
