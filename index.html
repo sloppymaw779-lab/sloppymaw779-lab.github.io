@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-<head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7427621447043291" crossorigin="anonymous"></script>
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7427621447043291" crossorigin="anonymous"></script>
 <title>Khaled Salem Portfolio</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -8,85 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Tajawal:wght@300;400;500;700&display=swap">
-<style>/*الشفرة ال css لل Chat */</style>
-  <style>/* زر العائم للـ Chat */
-.chat-fab {
-  position: fixed;
-  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
-  right: max(16px, env(safe-area-inset-right, 0px));
-  background: var(--wa);
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 15px;
-  padding: 12px 18px;
-  border-radius: 999px;
-  box-shadow: 0 8px 24px rgba(0,0,0,.4);
-  z-index: 40;
-}
-.chat-fab:hover { background: var(--wa); }
-
-/* نافذة الدردشة */
-.chat-container {
-  position: fixed;
-  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
-  right: max(16px, env(safe-area-inset-right, 0px));
-  width: 320px;
-  max-height: 520px;
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(0,0,0,.2);
-  overflow: hidden;
-  z-index: 50;
-}
-.chat-header {
-  background: var(--wine);
-  color: #fff;
-  padding: 12px 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.chat-header h3 { margin: 0; font-size: 1.1rem; }
-.close-btn {
-  background: transparent;
-  border: none;
-  color: #fff;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-.chat-messages {
-  flex: 1;
-  padding: 12px;
-  overflow-y: auto;
-  font-size: 14px;
-  line-height: 1.5;
-}
-.chat-messages .message { margin-bottom: 12px; }
-.chat-messages .message.bot { color: #555; }
-.chat-messages .message.user { text-align: right; margin-left: auto; }
-.chat-form {
-  display: flex;
-  border-top: 1px solid #eee;
-  padding: 8px;
-}
-.chat-input {
-  flex: 1;
-  padding: 8px;
-  border: none;
-  font-size: 14px;
-  resize: none;
-}
-.chat-submit {
-  background: var(--wa);
-  color: #fff;
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-}
-.chat-submit:hover { background: var(--wa); }
+<style>
 body{margin:0}
 [hidden]{display:none!important}
 /* Layout: quiet dark burgundy stage, light-weight name, filterable masonry of work, plain about block, WhatsApp always reachable. */
@@ -211,8 +134,91 @@ footer{padding-block:32px 0;color:var(--muted);font-size:14px;display:flex;justi
   .about,.contact{grid-template-columns:1fr;gap:28px}
 }
 @media(prefers-reduced-motion:reduce){.work img{transition:none}}
-</style>
 
+/* ---------- CHAT AGENT CSS ---------- */
+.chat-fab {
+  position: fixed;
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  right: max(16px, env(safe-area-inset-right, 0px));
+  background: var(--wa);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.4);
+  z-index: 40;
+}
+.chat-fab:hover { background: var(--wa); }
+
+.chat-container {
+  position: fixed;
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  right: max(16px, env(safe-area-inset-right, 0px));
+  width: 320px;
+  max-height: 520px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.2);
+  overflow: hidden;
+  z-index: 50;
+}
+.chat-header {
+  background: var(--wine);
+  color: #fff;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chat-header h3 { margin: 0; font-size: 1.1rem; }
+.close-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  line-height: 1;
+}
+.chat-messages {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  font-size: 14px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.chat-messages .message { margin: 0; padding: 8px 12px; border-radius: 8px; max-width: 85%; }
+.chat-messages .message.bot { background: #f1f3f5; color: #333; align-self: flex-start; }
+.chat-messages .message.user { background: var(--wa); color: #fff; align-self: flex-end; margin-left: auto; }
+.chat-form {
+  display: flex;
+  border-top: 1px solid #eee;
+  padding: 8px;
+}
+.chat-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: none;
+}
+.chat-submit {
+  background: var(--wa);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.chat-submit:hover { background: var(--wa); }
+</style>
 </head>
 <body>
 <div id="app" dir="ltr" lang="en">
@@ -332,7 +338,8 @@ footer{padding-block:32px 0;color:var(--muted);font-size:14px;display:flex;justi
   </div>
 </section>
 
-<a href="privacy.html" data-ar="سياسة الخصوصية">Privacy Policy</a></footer>><span>© 2026 Khaled Salem</span><span data-ar="فنان بصري · مصمم جرافيك">Visual artist · Graphic designer</span></footer>
+<a href="privacy.html" data-ar="سياسة الخصوصية">Privacy Policy</a>
+<footer><span>© 2026 Khaled Salem</span><span data-ar="فنان بصري · مصمم جرافيك">Visual artist · Graphic designer</span></footer>
 </div>
 </div>
 
@@ -396,6 +403,53 @@ footer{padding-block:32px 0;color:var(--muted);font-size:14px;display:flex;justi
   });
   function sel(b){var s=b.parentNode.querySelector('span'),r=document.createRange();r.selectNodeContents(s);var w=getSelection();w.removeAllRanges();w.addRange(r)}
 })();
+</script>
+
+<script>
+/* ----------  AGENT CHAT LOGIC  ---------- */
+const responses = {
+  "price|cost|price": "Our services start at $X. Contact us for a detailed quote.",
+  "portfolio|portfolio|portfolio": "You can view my full portfolio on Behance or request a PDF portfolio.",
+  "contact|contact": "Reach me via WhatsApp 01208469278 or email glorytothe@gmail.com.",
+  "hours|hours": "Mon‑Fri 9 am‑6 pm (local time).",
+  "about|about": "I'm a graphic designer & visual artist with 5+ years of experience in brand identity, print and social media.",
+  "default": "Hello! How can I help you today?"
+};
+
+const chatContainer = document.getElementById('chat-container');
+const chatCloseBtn  = document.getElementById('chat-close');
+const chatFabBtn    = document.getElementById('chat-fab');
+const chatForm      = document.getElementById('chat-form');
+const chatInput     = document.querySelector('.chat-input');
+const chatMessages  = document.getElementById('chat-messages');
+
+chatFabBtn.addEventListener('click', () => { chatContainer.hidden = false; });
+chatCloseBtn.addEventListener('click', () => { chatContainer.hidden = true; });
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && !chatContainer.hidden) chatCloseBtn.click();
+});
+
+chatForm.addEventListener('submit', e => {
+  e.preventDefault();
+  const txt = chatInput.value.trim();
+  if (!txt) return;
+  addMessage(txt, 'user');
+  chatInput.value = '';
+
+  let reply = 'default';
+  for (const key in responses) {
+    if (txt.toLowerCase().includes(key)) { reply = responses[key]; break; }
+  }
+  setTimeout(() => addMessage(reply, 'bot'), 500);
+});
+
+function addMessage(text, sender) {
+  const div = document.createElement('div');
+  div.className = 'message ' + sender;
+  div.textContent = text;
+  chatMessages.appendChild(div);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
 </script>
 
 </body>
